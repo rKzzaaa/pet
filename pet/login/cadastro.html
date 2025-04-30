@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/pet/imgs/image.png" alt="Logo">
+        </div>
+        <nav class="menu">
+            <a href="pet.html">Home</a>
+            <a href="#">Banho & Tosa</a>
+            <a href="#">Consultas & Vacinas</a>
+            <a href="#">Compras</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="hero"> <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Cuide do seu pet com praticidade!</h1>
+            <p>Agende consultas, registre vacinas e acompanhe a rotina do seu melhor amigo.</p>
+            
+        </section>
+    </main>
+
+
+    <!-- Botão para abrir o modal -->
+    <div class="container">
+        <button onclick="abrirModal()">Criar Conta</button>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div id="modalCadastro" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Cadastro</h2>
+            <form id="formCadastro">
+                <div class="input-block">
+                    <label for="emailCadastro">E-mail:</label>
+                    <input type="email" id="emailCadastro" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="senhaCadastro">Senha:</label>
+                    <input type="password" id="senhaCadastro" placeholder="Crie uma senha" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="nomePet">Nome do Pet:</label>
+                    <input type="text" id="nomePet" placeholder="Nome do seu pet" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="pesoPet">Peso do Pet (kg):</label>
+                    <input type="number" id="pesoPet" placeholder="Peso em kg" required>
+                </div>
+
+                <div class="input-block">
+                    <label for="racaPet">Raça do Pet:</label>
+                    <input type="text" id="racaPet" placeholder="Raça do pet" required>
+                </div>
+
+                <button type="submit">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PetCare - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>
